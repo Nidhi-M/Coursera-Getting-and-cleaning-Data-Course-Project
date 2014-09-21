@@ -75,5 +75,5 @@ final_data<-merged_selected_activity%>%
   select(-subject_id,-activity_name)
   
 ##################################################################################
-# Export the final_Data set 
+# Export the final_Data set  
 write.table(final_data, 'UCI HAR Dataset/tidyData.txt',row.names=FALSE,sep='\t')
