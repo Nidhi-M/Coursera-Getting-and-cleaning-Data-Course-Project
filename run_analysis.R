@@ -69,8 +69,8 @@ merged_selected_activity<-merge(merged_selected,activity_labels)
 # 5. Create a second, independent tidy data set with the average of each variable
 #for each activity and each subject.
 final_data<-merged_selected_activity%>%
-  aggregate(by=list(subject=merged_selected_activity$subject_id,
-                    activity=merged_selected_activity$activity_name),
+               aggregate(by=list(activity=merged_selected_activity$activity_label,
+                                 subject=merged_selected_activity$subject_id),
             FUN=mean, na.rm=TRUE)%>%
   select(-subject_id,-activity_name)
   
