@@ -64,10 +64,13 @@ fBodyAccJerkMag
 fBodyGyroMag
 
 fBodyGyroJerkMag
+
 The set of variables that were estimated (and kept for this assignment) from these signals are:
 
 mean(): Mean value
 std(): Standard deviation
+
+
 Other estimates have been removed for the purpose of this excercise.
 
 Note: features are normalized and bounded within [-1,1].
